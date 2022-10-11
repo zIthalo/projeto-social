@@ -36,3 +36,10 @@ main{
     background: url(../imagens/frame-iphone.png) no-repeat; /*Este no repeat como já vimos ele não se coloca em um comando específico tipo repeat:no-repeat;, mas sim depois de uma imagem. E esta foi a primeira vez que colocamaos uma imagem através do css */
     
 }
+#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}

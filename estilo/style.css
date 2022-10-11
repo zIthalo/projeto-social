@@ -43,3 +43,21 @@ main{
     width: 269px;
     height: 471px;
 }
+section#redes-sociais{
+    text-align: right; /*utilizei este comando simples para mandar minhas imagens para a direita do meu site*/
+}
+section#redes-sociais img{
+    width: 50px; /*Se a imagem já for quadrada não precisa você colocar o height*/
+    margin: 10px; /*para afastar uma imagem das outras*/
+    border-radius: 50%; /*toda vez que você quiser arredondar uma imagem quadrada use este comando e de quadrada a imagem passará a ser uma bolinha*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    /*A maneira mais simples e preguiçosa de colocar uma imagem ao lado da outra é utilizando o <br> direto de um html*/
+    box-sizing: border-box; /*depois de ter configurado o meu hover border eu tive que fazer a configuração da box sizing para as minhas imagens não ficarem se mechendo quando a borda fosse ativada ou aparecesse*/
+    
+}
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.599);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+    transition: transform .3s, border .5s;
+}

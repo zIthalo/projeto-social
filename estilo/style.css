@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw; /****na width você nunca usa vh e sim vw talvez um erro como este tenha sido o problema da responsividade de algum site seu*/
+    background-color: black;
+}
+body{
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;/*para a imagem cobrir todo o espaço de uma tag*/
+    background-attachment: fixed;/*para não dar barra de rolagem*/
+
+}
+
+main{
+    position:relative; /*posição relativa para organizar a centralização*/
+    height: 100vh; /*Por que quando eu coloquei o meu height em 100vh sumiu o fundo preto do body? porque lá em cima a gente zerou os margins e paddings da página*/
+   
+}
+
+#telefone{
+    position: absolute;/*assim que eu configuro o position absolute eu já posso organizar ele no top, left, right e bottom ↓↓*/
+    top: 50%; /*Agora se eu configurasse somente top e left ele só iria centralizar a ponta superior esquerda do meu quadrado da section no centro e não realmente o centro do quadrado. E como resolver isso?↓↓↓ usando o transform*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 627px; /*Como eu fiz para chegar nesse resultado de tamanho de imagem? 1º eu abri a imagem com gimp (clicando com o botão direito e depois em abrir como) e depois apertei alt enter a primeira informação do quadrinho é a largura e tamanho da imagem (nessa ordem mesmo)*/
+    width: 311px;
+    background-color: blue;
+    background: url(../imagens/frame-iphone.png) no-repeat; /*Este no repeat como já vimos ele não se coloca em um comando específico tipo repeat:no-repeat;, mas sim depois de uma imagem. E esta foi a primeira vez que colocamaos uma imagem através do css */
+    
+}

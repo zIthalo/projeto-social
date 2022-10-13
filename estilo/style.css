@@ -28,8 +28,9 @@ main{
     position: absolute;/*assim que eu configuro o position absolute eu já posso organizar ele no top, left, right e bottom ↓↓*/
     top: 50%; /*Agora se eu configurasse somente top e left ele só iria centralizar a ponta superior esquerda do meu quadrado da section no centro e não realmente o centro do quadrado. E como resolver isso?↓↓↓ usando o transform*/
     left: 50%;
+    right: 20%;
     transform: translate(-50%, -50%);
-
+    
     height: 627px; /*Como eu fiz para chegar nesse resultado de tamanho de imagem? 1º eu abri a imagem com gimp (clicando com o botão direito e depois em abrir como) e depois apertei alt enter a primeira informação do quadrinho é a largura e tamanho da imagem (nessa ordem mesmo)*/
     width: 311px;
     background-color: blue;

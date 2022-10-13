@@ -53,6 +53,7 @@ section#redes-sociais img{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     /*A maneira mais simples e preguiçosa de colocar uma imagem ao lado da outra é utilizando o <br> direto de um html*/
     box-sizing: border-box; /*depois de ter configurado o meu hover border eu tive que fazer a configuração da box sizing para as minhas imagens não ficarem se mechendo quando a borda fosse ativada ou aparecesse*/
+    margin-left: 10px;
     
 }
 section#redes-sociais img:hover{

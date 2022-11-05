@@ -32,7 +32,7 @@ main{
     transform: translate(-50%, -50%);
     
     height: 627px; /*Como eu fiz para chegar nesse resultado de tamanho de imagem? 1º eu abri a imagem com gimp (clicando com o botão direito e depois em abrir como) e depois apertei alt enter a primeira informação do quadrinho é a largura e tamanho da imagem (nessa ordem mesmo)*/
-    width: 311px;
+    min-width: 311px;
     background-color: blue;
     background: url(../imagens/frame-iphone.png) no-repeat; /*Este no repeat como já vimos ele não se coloca em um comando específico tipo repeat:no-repeat;, mas sim depois de uma imagem. E esta foi a primeira vez que colocamaos uma imagem através do css */
     
